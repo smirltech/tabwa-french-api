@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd57ec6d-5982-4412-90be-10a78bb5c06e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +223,7 @@
       <workItem from="1652397091780" duration="1470000" />
       <workItem from="1652428205955" duration="10000" />
       <workItem from="1652610420810" duration="528000" />
-      <workItem from="1652610959035" duration="140000" />
+      <workItem from="1652610959035" duration="300000" />
     </task>
     <servers />
   </component>

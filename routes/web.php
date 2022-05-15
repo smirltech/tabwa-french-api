@@ -24,6 +24,13 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
+Route::match(['get', 'post'], 'git-deploy', function () {
+    //exec('git reset --hard');
+    exec('git pull origin master');
+    //exec('composer dump-autoload');
+    return 'ok';
+});
+
 //Route::get('/home', 'HomeController@index')->name('home');
 //Route::get('/dashboard', [DashboardController::class, 'index']);
 //Route::get('/', 'DashboardController@index');
