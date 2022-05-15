@@ -5,7 +5,7 @@
         <h2>Politique de Confidentialité</h2>
         <ul class="breadcrumb">
 
-            <li class="breadcrumb-item">Politiques de Confid</li>
+            <li class="breadcrumb-item">Politiques</li>
             <li class="breadcrumb-item">Dictionnaire Tabwa-Français</li>
         </ul>
         <div class="container">
