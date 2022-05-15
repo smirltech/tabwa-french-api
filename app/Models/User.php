@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Helpers\Helper;
 use Illuminate\Http\Request;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -73,7 +74,7 @@ class User extends Authenticatable
                     'title' => 'New User registered successful',
                     'body' => "A new user has successfully registered. Name: ".$user->name.", email: ".$user->email.".",
                 ];
-                sendNormalMail(adminEmail(), $details);
+                sendNormalMail(Helper::$adminEmail, $details);
 
                 return $controller->sendResponse($success, 'User register successfully.');
             }
@@ -102,7 +103,7 @@ class User extends Authenticatable
                 'title' => 'User login successful',
                 'body' => "A user has successfully logged in. Name: ".$user->name.", email: ".$user->email.".",
             ];
-            sendNormalMail(adminEmail(), $details);
+            sendNormalMail(Helper::$adminEmail, $details);
             return $controller->sendResponse($success, 'User login successfully !');
         }
         return $controller->sendError('Login Error', []);
