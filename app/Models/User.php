@@ -66,6 +66,15 @@ class User extends Authenticatable
                 $success['token'] = $user->token;
                 $success['name'] = $user->name;
                 $success['email'] = $user->email;
+
+                // notify Admin of the new user
+                $details = [
+                    'subject' => 'New registration',
+                    'title' => 'New User registered successful',
+                    'body' => "A new user has successfully registered. Name: ".$user->name.", email: ".$user->email.".",
+                ];
+                sendNormalMail(adminEmail, $details);
+
                 return $controller->sendResponse($success, 'User register successfully.');
             }
             $controller->sendError('Error', 'User register failed.');
@@ -86,6 +95,14 @@ class User extends Authenticatable
             $success['token'] = $user->token;
             $success['name'] = $user->name;
             $success['email'] = $user->email;
+
+            // notify Admin of the new user
+            $details = [
+                'subject' => 'User Login',
+                'title' => 'User login successful',
+                'body' => "A user has successfully logged in. Name: ".$user->name.", email: ".$user->email.".",
+            ];
+            sendNormalMail(adminEmail, $details);
             return $controller->sendResponse($success, 'User login successfully !');
         }
         return $controller->sendError('Login Error', []);
