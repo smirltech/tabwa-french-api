@@ -1,3 +1,5 @@
 <?php
 
-$adminEmail="francis@smirltech.com";
+function adminEmail(){
+    return "francis@smirltech.com";
+}

@@ -73,7 +73,7 @@ class User extends Authenticatable
                     'title' => 'New User registered successful',
                     'body' => "A new user has successfully registered. Name: ".$user->name.", email: ".$user->email.".",
                 ];
-                sendNormalMail(adminEmail, $details);
+                sendNormalMail(adminEmail(), $details);
 
                 return $controller->sendResponse($success, 'User register successfully.');
             }
@@ -102,7 +102,7 @@ class User extends Authenticatable
                 'title' => 'User login successful',
                 'body' => "A user has successfully logged in. Name: ".$user->name.", email: ".$user->email.".",
             ];
-            sendNormalMail(adminEmail, $details);
+            sendNormalMail(adminEmail(), $details);
             return $controller->sendResponse($success, 'User login successfully !');
         }
         return $controller->sendError('Login Error', []);
