@@ -70,7 +70,8 @@ class Translation extends Model
         $translation->translation = $request->input('translation');
         $translation->example = $request->input('example');
         $translation->example_translation = $request->input('example_translation');
-        $translation->updater_id = $request->input('user_id');
+        //$translation->updater_id = $request->input('user_id');
+        $translation->updater_id = $user_id;
 
         $did = $translation->save();
 
@@ -99,6 +100,6 @@ class Translation extends Model
 
     public function updater()
     {
-        return $this->belongsTo(User::class, 'user_id')->withDefault();
+        return $this->belongsTo(User::class, 'updater_id')->withDefault();
     }
 }
