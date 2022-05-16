@@ -147,6 +147,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -176,7 +177,7 @@
       <workItem from="1652619028903" duration="1465000" />
       <workItem from="1652630709519" duration="2109000" />
       <workItem from="1652650486678" duration="247000" />
-      <workItem from="1652736449236" duration="338000" />
+      <workItem from="1652736449236" duration="1616000" />
     </task>
     <servers />
   </component>
