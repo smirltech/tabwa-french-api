@@ -70,7 +70,7 @@ class Translation extends Model
         $translation->translation = $request->input('translation');
         $translation->example = $request->input('example');
         $translation->example_translation = $request->input('example_translation');
-        $translation->updater_id = $user_id;
+        $translation->updater_id = $request->input('user_id');
 
         $did = $translation->save();
 
