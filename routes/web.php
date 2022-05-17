@@ -5,6 +5,7 @@ use App\Http\Controllers\LexicsController;
 use App\Http\Controllers\TranslationsController;
 use App\Http\Controllers\TypesController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Storage;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,6 +40,15 @@ Route::get('/', function () {
    return view('policies/dictionnaire_tabwa/index');
 });
 
+Route::get('/welcome', function () {
+    //return view('welcome');
+    return view('welcome');
+});
+
 Route::get('/privacy', function () {
     return view('policies/dictionnaire_tabwa/index');
+});
+
+Route::get('windows-app', function () {
+    return Storage::download('public/tabwa_french.msix');
 });
