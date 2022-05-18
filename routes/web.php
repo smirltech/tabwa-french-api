@@ -35,10 +35,7 @@ Route::match(['get', 'post'], 'git-deploy', function () {
 //Route::get('/home', 'HomeController@index')->name('home');
 //Route::get('/dashboard', [DashboardController::class, 'index']);
 //Route::get('/', 'DashboardController@index');
-Route::get('/', function () {
-    //return view('welcome');
-   return view('policies/dictionnaire_tabwa/index');
-});
+
 
 Route::get('/welcome', function () {
     //return view('welcome');
@@ -51,4 +48,9 @@ Route::get('/privacy', function () {
 
 Route::get('windows-app', function () {
     return Storage::download('public/tabwa_french.msix');
+});
+
+Route::get('/', function () {
+    //return view('welcome');
+    return view('policies/dictionnaire_tabwa/index');
 });

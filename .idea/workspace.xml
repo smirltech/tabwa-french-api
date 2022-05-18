@@ -152,7 +152,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/storage/app/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/storage/app/public/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -162,6 +162,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\tabwa\storage\app\public\images" />
       <recent name="C:\laragon\www\tabwa\storage\app\public" />
     </key>
   </component>
@@ -184,7 +185,7 @@
       <workItem from="1652630709519" duration="2109000" />
       <workItem from="1652650486678" duration="247000" />
       <workItem from="1652736449236" duration="2313000" />
-      <workItem from="1652819032425" duration="2301000" />
+      <workItem from="1652819032425" duration="5319000" />
     </task>
     <servers />
   </component>
