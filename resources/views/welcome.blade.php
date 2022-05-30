@@ -10,12 +10,12 @@
                     enrichissement.<p>
                     <a hidden href="{{url('windows-app')}}" class="btn btn-primary my-2">Télécharger Version Windows</a>
                     <a href="{{url('/storage/tabwafrenchsetup.exe')}}" class="btn btn-primary my-2">Télécharger Version Windows</a>
-                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                    <a hidden href="#" class="btn btn-secondary my-2">Secondary action</a>
                 </p>
             </div>
         </div>
     </section>
-    <div class="album py-5 bg-light">
+    <div hidden class="album py-5 bg-light">
         <div class="container">
 
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
