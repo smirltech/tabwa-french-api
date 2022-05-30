@@ -8,7 +8,8 @@
                 <p class="lead text-muted">Ce dictionnaire fait partie d'une tentative de conserver et promouvoir de la langue Tabwa. C'est
                     un dictionnaire de participation communautaire, où tout le monde peut contribuer à son
                     enrichissement.<p>
-                    <a href="{{url('windows-app')}}" class="btn btn-primary my-2">Télécharger Version Windows</a>
+                    <a hidden href="{{url('windows-app')}}" class="btn btn-primary my-2">Télécharger Version Windows</a>
+                    <a href="{{url('/storage/tabwafrenchsetup.exe')}}" class="btn btn-primary my-2">Télécharger Version Windows</a>
                     <a href="#" class="btn btn-secondary my-2">Secondary action</a>
                 </p>
             </div>
