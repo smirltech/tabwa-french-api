@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5e05892a-8d2a-4ab9-8929-742cfc3a4fdd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +151,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/storage/app/public/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/storage/app/public" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -162,8 +161,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\tabwa\storage\app\public\images" />
       <recent name="C:\laragon\www\tabwa\storage\app\public" />
+      <recent name="C:\laragon\www\tabwa\storage\app\public\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -185,7 +184,10 @@
       <workItem from="1652630709519" duration="2109000" />
       <workItem from="1652650486678" duration="247000" />
       <workItem from="1652736449236" duration="2313000" />
-      <workItem from="1652819032425" duration="5319000" />
+      <workItem from="1652819032425" duration="6190000" />
+      <workItem from="1653027735383" duration="43000" />
+      <workItem from="1653027804175" duration="672000" />
+      <workItem from="1653943258681" duration="179000" />
     </task>
     <servers />
   </component>
