@@ -5,6 +5,7 @@ use App\Http\Controllers\LexicsController;
 use App\Http\Controllers\TranslationsController;
 use App\Http\Controllers\TypesController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Storage;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,11 +35,22 @@ Route::match(['get', 'post'], 'git-deploy', function () {
 //Route::get('/home', 'HomeController@index')->name('home');
 //Route::get('/dashboard', [DashboardController::class, 'index']);
 //Route::get('/', 'DashboardController@index');
-Route::get('/', function () {
+
+
+Route::get('/welcome', function () {
     //return view('welcome');
-   return view('policies/dictionnaire_tabwa/index');
+    return view('welcome');
 });
 
 Route::get('/privacy', function () {
+    return view('policies/dictionnaire_tabwa/index');
+});
+
+Route::get('windows-app', function () {
+    return Storage::download('public/tabwafrenchsetup.exe');
+});
+
+Route::get('/', function () {
+    //return view('welcome');
     return view('policies/dictionnaire_tabwa/index');
 });
