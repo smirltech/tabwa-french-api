@@ -47,7 +47,9 @@ Route::get('/privacy', function () {
 });
 
 Route::get('windows-app', function () {
-    return Storage::download('/public/tabwafrenchsetup.exe');
+   // return Storage::download('storage/tabwafrenchsetup.exe');
+   // return url('storage/tabwafrenchsetup.exe');
+    return Storage::disk('public')->get('tabwafrenchsetup.exe');
 });
 
 Route::get('/', function () {
